@@ -99,6 +99,18 @@ const arrowMapping: Record<string, string> = {
   "<==": "&lArr;",
 }
 
+const mailerLiteJS: JSResource = {
+  loadTime: "beforeDOMReady",
+  script: `<!-- MailerLite Universal -->
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1357094');
+<!-- End MailerLite Universal -->`,
+contentType: "inline"
+}
+
 function canonicalizeCallout(calloutName: string): keyof typeof calloutMapping {
   const normalizedCallout = calloutName.toLowerCase() as keyof typeof calloutMapping
   // if callout is not recognized, make it a custom one
@@ -764,6 +776,8 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options>>
           inline: true,
         })
       }
+
+      js.push(mailerLiteJS)
 
       return { js, css }
     },
