@@ -23,8 +23,8 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "IM Fell English",
-        body: "Yrsa",
+        header: "Oldenburg",
+        body: "Varela Round",
         code: "IBM Plex Mono",
       },
       colors: {
