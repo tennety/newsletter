@@ -100,7 +100,7 @@ const arrowMapping: Record<string, string> = {
 }
 
 const mailerLiteJS: JSResource = {
-  loadTime: "beforeDOMReady",
+  loadTime: "afterDOMReady",
   script: `<!-- MailerLite Universal -->
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
