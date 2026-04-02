@@ -1,3 +1,8 @@
+---
+title: Update on All Our Monsters Issue 2!
+date: 2026-04-01
+---
+
 Hello readers!
 
 I've been plugging along on Issue 2. The coloring is about 50% done. I'll have an ashcan preview at [SPACE 2026](https://www.backporchcomics.com/space), along with new copies of Issue 1. SPACE is at the Makoy Center in Hilliard this time, and free to attend. Come find me at table C07!

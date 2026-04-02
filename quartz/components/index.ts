@@ -1,6 +1,8 @@
 import Content from "./pages/Content"
 import TagContent from "./pages/TagContent"
 import FolderContent from "./pages/FolderContent"
+import AllPostsContent from "./pages/AllPostsContent"
+import LatestPostRedirect from "./LatestPostRedirect"
 import NotFound from "./pages/404"
 import ArticleTitle from "./ArticleTitle"
 import Darkmode from "./Darkmode"
@@ -26,6 +28,8 @@ import ConditionalRender from "./ConditionalRender"
 
 export {
   ArticleTitle,
+  AllPostsContent,
+  LatestPostRedirect,
   Content,
   TagContent,
   FolderContent,
